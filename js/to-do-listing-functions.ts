@@ -9,4 +9,24 @@ module ToDoList {
     }
     return descriptions;
   }
+
+  export var getTasks = function(task_type: string) {
+    var arr: array = [];
+    for (var task of tasks) {
+      if (task.constructor.name === task_type) {
+        arr.push(task);
+      }
+    }
+    return arr;
+  }
+
+  export var getTasksByPriority = function (priority: string) {
+    var arr: array = [];
+    for (var task of tasks) {
+      if (task.priority === priority) {
+        arr.push(task);
+      }
+    }
+    return arr;
+  }
 }
