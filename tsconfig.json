@@ -1,0 +1,7 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "rootDir": "js",
+    "out": "build/js/app.js"
+  }
+}
